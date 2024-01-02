@@ -63,6 +63,7 @@ python train.py
 
 After the training, the weight file UNet.pth is generated in the home directory.<br>
 We provide our weight file pretrained using the DRIVE dataset (loss functions during training include cross-entropy loss and dice loss) .<br>
+
 link:<br>
 https://pan.baidu.com/s/1nk0EmKEBVhtKAnctdo4veA<br>
 Extract code:<br>
