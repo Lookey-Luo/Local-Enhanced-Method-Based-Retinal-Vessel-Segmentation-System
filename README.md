@@ -129,3 +129,16 @@ python split_training_set.py
 ```
 After running the code, a folder named DRIVE_patch will be generated, and the clipped images will be numbered sequentially and saved in this folder. This code only applies to clipping the training set.<br>
 Then we can use the clipped patches for training.<br>
+
+### Execute the Training Code
+```python  
+python train_patch.py
+```
+
+After the training, the weight file UNet_patch.pth is generated in the home directory.<br>
+We provide our weight file pretrained using the DRIVE dataset (loss functions during training include cross-entropy loss and dice loss) .<br>
+
+link:<br>
+wait for upload<br>
+Extract code:<br>
+wait for upload<br>
