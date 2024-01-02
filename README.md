@@ -51,6 +51,11 @@ Place the dataset in the specified directory as required. For example, the DRIVE
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/20_testing.png<br>
 
+The DRIVE dataset and STARE dataset are processed grayscale images. If there are RGB images in your dataset, convert the RGB images to grayscale by executing the following command.<br>
+```python  
+python RGB2gray.py
+```
+
 ### Execute the Training Code
 ```python  
 python train.py
