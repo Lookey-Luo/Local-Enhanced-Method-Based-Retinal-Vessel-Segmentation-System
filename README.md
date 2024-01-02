@@ -63,4 +63,12 @@ python train.py
 
 After the training, the weight file UNet.pth is generated in the home directory.<br>
 
+### Predict a Mask
+Place an image in **png** format in the predict directory. The file name should be img.png.<br>
+Run the prediction code.<br>
+```python  
+python predict.py
+```
+Then the output mask can be observed in the result directory, and the file name is res.png.<br>
+
 ## With Patch
