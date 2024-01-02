@@ -126,9 +126,10 @@ python RGB2gray.py
 ### Run the Clipping Code
 ```python  
 python split_training_set.py
+python split_testing_set.py
 ```
-After running the code, a folder named DRIVE_patch will be generated, and the clipped images will be numbered sequentially and saved in this folder. This code only applies to clipping the training set.<br>
-Then we can use the clipped patches for training.<br>
+After running the code, a folder named DRIVE_patch will be generated, and the clipped images will be numbered sequentially and saved in this folder. This code applies to clipping the training set and the testing set.<br>
+Then we can use the clipped patches for training and testing.<br>
 
 ### Execute the Training Code
 ```python  
