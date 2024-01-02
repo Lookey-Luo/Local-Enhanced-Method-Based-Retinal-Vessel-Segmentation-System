@@ -52,6 +52,10 @@ Place the dataset in the specified directory as required. For example, the DRIVE
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/20_testing.png<br>
 
 ### Execute the Training Code
+```python  
+python train.py
+```
+
 After the training, the weight file UNet.pth is generated in the home directory.<br>
 
 ## With Patch
