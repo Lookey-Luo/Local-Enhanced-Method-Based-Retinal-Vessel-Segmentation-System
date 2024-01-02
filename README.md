@@ -8,6 +8,8 @@ https://pan.baidu.com/s/1nk0EmKEBVhtKAnctdo4veA<br>
 Extract code:<br>
 8nel<br>
 
+The Digital Retinal Images for Vessel Extraction (DRIVE) dataset is used for retinal vascular segmentation. It consists of a total of 40 color fundus images in JPEG format; These include 7 cases of abnormal pathology. The images were acquired as part of a diabetic retinopathy screening program in the Netherlands. Each image has a resolution of 584*565 pixels, and each color channel has 8 bits. The 40 images were divided equally into 20 images for the training set and 20 images for the test set. In both sets, each image has a circular field of view mask (FOV) with a diameter of about 540 pixels
+
 ## STARE Dataset  
 link:<br>
 https://pan.baidu.com/s/1TeXuIS21OfRLoh6DiwZuIg<br>
