@@ -65,9 +65,9 @@ After the training, the weight file UNet.pth is generated in the home directory.
 We provide our weight file pretrained using the DRIVE dataset (loss functions during training include cross-entropy loss and dice loss) .<br>
 
 link:<br>
-https://pan.baidu.com/s/1nk0EmKEBVhtKAnctdo4veA<br>
+https://pan.baidu.com/s/1Zexs93LNct2n1lCjNIlUoQ<br>
 Extract code:<br>
-8nel<br>
+3c4x<br>
 
 ### Predict a Mask
 Place an image in **png** format in the predict directory. The file name should be img.png.<br>
