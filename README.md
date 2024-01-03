@@ -144,6 +144,6 @@ After the training, the weight file UNet_patch.pth is generated in the home dire
 We provide our weight file pretrained using the DRIVE dataset (loss functions during training include cross-entropy loss and dice loss) .<br>
 
 link:<br>
-wait for upload<br>
+https://pan.baidu.com/s/1-1CpGxDRvKkPiI0AztKVtA<br>
 Extract code:<br>
-wait for upload<br>
+vvlh<br>
