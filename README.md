@@ -133,6 +133,7 @@ python split_training_set.py
 python split_testing_set.py
 ```
 After running the code, a folder named DRIVE_patch will be generated, and the clipped images will be numbered sequentially and saved in this folder. This code applies to clipping the training set and the testing set.<br>
+You can modify Line 18 of split_training_set.py and split_testing_set.py to resize each patch, or modify Line 19 of split_training_set.py and split_testing_set.py to adjust the number of patches cropped from each image.<br>
 Then we can use the clipped patches for training and testing.<br>
 
 ### Execute the Training Code
