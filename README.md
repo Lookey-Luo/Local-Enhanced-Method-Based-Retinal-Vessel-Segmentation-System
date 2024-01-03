@@ -147,3 +147,20 @@ link:<br>
 https://pan.baidu.com/s/1-1CpGxDRvKkPiI0AztKVtA<br>
 Extract code:<br>
 vvlh<br>
+
+### Predict a Mask
+Place an image in **png** format in the predict directory. The file name should be img.png.<br>
+We have put a processed image in the predict folder. You can replace it with your own image (either an RGB image or a grayscale image) .<br>
+
+./predict<br>
+&nbsp;&nbsp;&nbsp;&nbsp;/img.png<br>
+
+Run the prediction code.<br>
+```python  
+python predict.py
+```
+Then the output mask can be observed in the result directory, and the file name is res.png.<br>
+
+./result<br>
+&nbsp;&nbsp;&nbsp;&nbsp;/res.png<br>
+
