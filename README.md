@@ -147,9 +147,9 @@ Our hyperparameters were set as follows: the images of the training set and test
 We provide our weight file pretrained using the DRIVE dataset (loss functions during training include cross-entropy loss and dice loss) .<br>
 
 link:<br>
-https://pan.baidu.com/s/1-1CpGxDRvKkPiI0AztKVtA<br>
+https://pan.baidu.com/s/1sSMdeVUdzkqxl0bAp84cwQ<br>
 Extract code:<br>
-vvlh<br>
+70ru<br>
 
 ### Predict a Mask
 Place an image in **png** format in the predict directory. The file name should be img.png.<br>
