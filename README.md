@@ -167,7 +167,7 @@ We have put a processed image in the predict folder. You can replace it with you
 
 Run the prediction code.<br>
 ```python  
-python predict.py
+python predict_through_patch.py
 ```
 Then the output mask can be observed in the result directory, and the file name is res.png.<br>
 
