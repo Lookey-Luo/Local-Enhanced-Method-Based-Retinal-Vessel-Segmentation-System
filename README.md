@@ -142,7 +142,8 @@ Then we can use the clipped patches for training and testing.<br>
 python train_patch.py
 ```
 
-After the training, the weight file UNet_patch.pth is generated in the home directory.<br>
+After the training, the weight file UNet_patch_equalized_patch_256_50.pth is generated in the home directory.<br>
+Our hyperparameters were set as follows: the images of the training set and testing set were adjusted to 512 × 512 resolution, the slice size was 256 × 256 resolution, and 50 slices were cropped out from each image. This is a good scheme that we got after substantial comparative experiments.<br>
 We provide our weight file pretrained using the DRIVE dataset (loss functions during training include cross-entropy loss and dice loss) .<br>
 
 link:<br>
