@@ -137,6 +137,13 @@ You can modify Line 18 of split_training_set.py and split_testing_set.py to resi
 The smaller the patch size, the more patches should be cropped, or the model is at risk of underfitting; conversely, the larger the patch size, the less patches should be cropped, or the model is at risk of overfitting.<br>
 Then we can use the clipped patches for training and testing.<br>
 
+### Histogram Equalization
+```python  
+python equalize_patch.py
+```
+After executing the above instructions, all the images in directory './DRIVE_patch/train/image' and './DRIVE_patch/test/image' will be equalized. The resulting images will overwrite the original files with the same names.<br>
+The Histogram equalization can enhance the image contrast and improve the accuracy of retinal vessel segmentation.<br>
+
 ### Execute the Training Code
 ```python  
 python train_patch.py
