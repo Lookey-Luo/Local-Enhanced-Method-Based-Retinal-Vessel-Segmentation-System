@@ -175,3 +175,6 @@ Then the output mask can be observed in the result directory, and the file name 
 &nbsp;&nbsp;&nbsp;&nbsp;/res.png<br>
 
 # Prototype Demonstration
+We provide links to prototypes of early system interfaces:<br>
+
+We also provide links to prototypes of optimized system interfaces:<br>
