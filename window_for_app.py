@@ -63,6 +63,38 @@ class RetinalVesselSegmentationApp:
         #鼠标离开原理界面切片按钮区域时，按钮变为白色
         def mouse_leave_get_patch_in_principle_window_button(event):
             self.get_patch_in_principle_window_button.config(bg = 'white')
+
+        #鼠标移动到原理界面直方图均衡化按钮区域时，按钮变为绿色            
+        def mouse_enter_equalize_patch_in_principle_window_button(event):
+            self.equalize_patch_in_principle_window_button.config(bg = 'lightgreen')
+            
+        #鼠标离开原理界面直方图均衡化按钮区域时，按钮变为白色
+        def mouse_leave_equalize_patch_in_principle_window_button(event):
+            self.equalize_patch_in_principle_window_button.config(bg = 'white')
+
+        #鼠标移动到原理界面分割按钮区域时，按钮变为绿色            
+        def mouse_enter_seg_patch_in_principle_window_button(event):
+            self.seg_patch_in_principle_window_button.config(bg = 'lightgreen')
+            
+        #鼠标离开原理界面分割按钮区域时，按钮变为白色
+        def mouse_leave_seg_patch_in_principle_window_button(event):
+            self.seg_patch_in_principle_window_button.config(bg = 'white')
+
+        #鼠标移动到原理界面拼接按钮区域时，按钮变为绿色            
+        def mouse_enter_concatenate_patch_in_principle_window_button(event):
+            self.concatenate_patch_in_principle_window_button.config(bg = 'lightgreen')
+            
+        #鼠标离开原理界面拼接按钮区域时，按钮变为白色
+        def mouse_leave_concatenate_patch_in_principle_window_button(event):
+            self.concatenate_patch_in_principle_window_button.config(bg = 'white')
+
+        #鼠标移动到原理界面遮蔽按钮区域时，按钮变为绿色            
+        def mouse_enter_attention_mask_in_principle_window_button(event):
+            self.attention_mask_in_principle_window_button.config(bg = 'lightgreen')
+            
+        #鼠标离开原理界面遮蔽按钮区域时，按钮变为白色
+        def mouse_leave_attention_mask_in_principle_window_button(event):
+            self.attention_mask_in_principle_window_button.config(bg = 'white')
             
         #鼠标移动到返回主页按钮区域时，按钮变为绿色            
         def mouse_enter_return_main_button(event):
@@ -165,6 +197,61 @@ class RetinalVesselSegmentationApp:
         self.patch_image_4_in_principle_window_label = tk.Label(root)
         self.patch_image_4_in_principle_window_label.place(x = 455, y = 455)
         self.patch_image_4_in_principle_window_label.place_forget()    #主界面不显示原理界面图像切片4
+
+        #为原理界面直方图均衡化后的图像切片1定义容器
+        self.equalized_patch_image_1_in_principle_window_label = tk.Label(root)
+        self.equalized_patch_image_1_in_principle_window_label.place(x = 610, y = 350)
+        self.equalized_patch_image_1_in_principle_window_label.place_forget()    #主界面不显示原理界面直方图均衡化后的图像切片1
+
+        #为原理界面直方图均衡化后的图像切片2定义容器
+        self.equalized_patch_image_2_in_principle_window_label = tk.Label(root)
+        self.equalized_patch_image_2_in_principle_window_label.place(x = 715, y = 350)
+        self.equalized_patch_image_2_in_principle_window_label.place_forget()    #主界面不显示原理界面直方图均衡化后的图像切片2
+
+        #为原理界面直方图均衡化后的图像切片3定义容器
+        self.equalized_patch_image_3_in_principle_window_label = tk.Label(root)
+        self.equalized_patch_image_3_in_principle_window_label.place(x = 610, y = 455)
+        self.equalized_patch_image_3_in_principle_window_label.place_forget()    #主界面不显示原理界面直方图均衡化后的图像切片3
+
+        #为原理界面直方图均衡化后的图像切片4定义容器
+        self.equalized_patch_image_4_in_principle_window_label = tk.Label(root)
+        self.equalized_patch_image_4_in_principle_window_label.place(x = 715, y = 455)
+        self.equalized_patch_image_4_in_principle_window_label.place_forget()    #主界面不显示原理界面直方图均衡化后的图像切片4
+
+        #为原理界面U-net原理图定义容器
+        self.Unet_in_principle_window_label = tk.Label(root)
+        self.Unet_in_principle_window_label.place(x = 870, y = 370)
+        self.Unet_in_principle_window_label.place_forget()    #主界面不显示原理界面U-net原理图
+
+        #为原理界面输出的掩码切片1定义容器
+        self.patch_mask_1_in_principle_window_label = tk.Label(root)
+        self.patch_mask_1_in_principle_window_label.place(x = 900, y = 120)
+        self.patch_mask_1_in_principle_window_label.place_forget()    #主界面不显示原理界面输出的掩码切片1
+
+        #为原理界面输出的掩码切片2定义容器
+        self.patch_mask_2_in_principle_window_label = tk.Label(root)
+        self.patch_mask_2_in_principle_window_label.place(x = 1005, y = 120)
+        self.patch_mask_2_in_principle_window_label.place_forget()    #主界面不显示原理界面输出的掩码切片2
+
+        #为原理界面输出的掩码切片3定义容器
+        self.patch_mask_3_in_principle_window_label = tk.Label(root)
+        self.patch_mask_3_in_principle_window_label.place(x = 900, y = 225)
+        self.patch_mask_3_in_principle_window_label.place_forget()    #主界面不显示原理界面输出的掩码切片3
+
+        #为原理界面输出的掩码切片4定义容器
+        self.patch_mask_4_in_principle_window_label = tk.Label(root)
+        self.patch_mask_4_in_principle_window_label.place(x = 1005, y = 225)
+        self.patch_mask_4_in_principle_window_label.place_forget()    #主界面不显示原理界面输出的掩码切片4
+
+        #为原理界面拼接后的掩码定义容器
+        self.concatenated_mask_in_principle_window_label = tk.Label(root)
+        self.concatenated_mask_in_principle_window_label.place(x = 625, y = 120)
+        self.concatenated_mask_in_principle_window_label.place_forget()    #主界面不显示原理界面拼接后的掩码
+
+        #为原理界面遮蔽后的掩码定义容器
+        self.attention_mask_in_principle_window_label = tk.Label(root)
+        self.attention_mask_in_principle_window_label.place(x = 365, y = 120)
+        self.attention_mask_in_principle_window_label.place_forget()    #主界面不显示原理界面遮蔽后的掩码
         
         #定义原理界面上传按钮
         self.upload_in_principle_window_button = tk.Button(root, text="上传", width=10, height=1, font = ('Arial', 12), cursor = 'hand2', command=self.upload_image_in_principle_window)
@@ -186,6 +273,34 @@ class RetinalVesselSegmentationApp:
         self.get_patch_in_principle_window_button.bind("<Enter>", mouse_enter_get_patch_in_principle_window_button)
         self.get_patch_in_principle_window_button.bind("<Leave>", mouse_leave_get_patch_in_principle_window_button)
         self.get_patch_in_principle_window_button.place_forget()    #主界面不显示原理界面切片按钮
+
+        #定义原理界面直方图均衡化按钮
+        self.equalize_patch_in_principle_window_button = tk.Button(root, text="直方图均衡化", width=10, height=1, font = ('Arial', 12), cursor = 'hand2', command=self.equalize_patch_in_principle_window)
+        self.equalize_patch_in_principle_window_button.place(x = 650, y = 550)
+        self.equalize_patch_in_principle_window_button.bind("<Enter>", mouse_enter_equalize_patch_in_principle_window_button)
+        self.equalize_patch_in_principle_window_button.bind("<Leave>", mouse_leave_equalize_patch_in_principle_window_button)
+        self.equalize_patch_in_principle_window_button.place_forget()    #主界面不显示原理界面直方图均衡化按钮
+
+        #定义原理界面分割按钮
+        self.seg_patch_in_principle_window_button = tk.Button(root, text="分割", width=10, height=1, font = ('Arial', 12), cursor = 'hand2', command=self.seg_patch_in_principle_window)
+        self.seg_patch_in_principle_window_button.place(x = 940, y = 550)
+        self.seg_patch_in_principle_window_button.bind("<Enter>", mouse_enter_seg_patch_in_principle_window_button)
+        self.seg_patch_in_principle_window_button.bind("<Leave>", mouse_leave_seg_patch_in_principle_window_button)
+        self.seg_patch_in_principle_window_button.place_forget()    #主界面不显示原理界面分割按钮
+
+        #定义原理界面拼接按钮
+        self.concatenate_patch_in_principle_window_button = tk.Button(root, text="拼接", width=10, height=1, font = ('Arial', 12), cursor = 'hand2', command=self.concatenate_patch_in_principle_window)
+        self.concatenate_patch_in_principle_window_button.place(x = 650, y = 290)
+        self.concatenate_patch_in_principle_window_button.bind("<Enter>", mouse_enter_concatenate_patch_in_principle_window_button)
+        self.concatenate_patch_in_principle_window_button.bind("<Leave>", mouse_leave_concatenate_patch_in_principle_window_button)
+        self.concatenate_patch_in_principle_window_button.place_forget()    #主界面不显示原理界面拼接按钮
+
+        #定义原理界面遮蔽按钮
+        self.attention_mask_in_principle_window_button = tk.Button(root, text="遮蔽", width=10, height=1, font = ('Arial', 12), cursor = 'hand2', command=self.attention_mask_in_principle_window)
+        self.attention_mask_in_principle_window_button.place(x = 390, y = 290)
+        self.attention_mask_in_principle_window_button.bind("<Enter>", mouse_enter_attention_mask_in_principle_window_button)
+        self.attention_mask_in_principle_window_button.bind("<Leave>", mouse_leave_attention_mask_in_principle_window_button)
+        self.attention_mask_in_principle_window_button.place_forget()    #主界面不显示原理界面遮蔽按钮
         
         #定义返回主页按钮
         self.return_main_button = tk.Button(root, text="返回主页", width=10, height=1, font = ('Arial', 12), cursor = 'hand2', command=self.return_main)
@@ -283,6 +398,113 @@ class RetinalVesselSegmentationApp:
         self.patch_image_4_in_principle_window_label.image = patch_image_4
 
         self.patch_image_4_in_principle_window_label.place(x = 455, y = 455)    #显示原理界面图像切片4
+        self.equalize_patch_in_principle_window_button.place(x = 650, y = 550)    #显示原理界面直方图均衡化按钮
+
+    def equalize_patch_in_principle_window(self):
+        #填充直方图均衡化后的图像切片1
+        equalized_patch_image_1 = Image.open('./tmp_for_app/real_equalized_patch_image_1.png')
+        equalized_patch_image_1 = equalized_patch_image_1.resize((75,75))
+        equalized_patch_image_1 = ImageTk.PhotoImage(equalized_patch_image_1)
+        self.equalized_patch_image_1_in_principle_window_label.configure(image=equalized_patch_image_1)
+        self.equalized_patch_image_1_in_principle_window_label.image = equalized_patch_image_1
+
+        self.equalized_patch_image_1_in_principle_window_label.place(x = 610, y = 350)    #显示原理界面直方图均衡化后的图像切片1
+
+        #填充直方图均衡化后的图像切片2
+        equalized_patch_image_2 = Image.open('./tmp_for_app/real_equalized_patch_image_2.png')
+        equalized_patch_image_2 = equalized_patch_image_2.resize((75,75))
+        equalized_patch_image_2 = ImageTk.PhotoImage(equalized_patch_image_2)
+        self.equalized_patch_image_2_in_principle_window_label.configure(image=equalized_patch_image_2)
+        self.equalized_patch_image_2_in_principle_window_label.image = equalized_patch_image_2
+
+        self.equalized_patch_image_2_in_principle_window_label.place(x = 715, y = 350)    #显示原理界面直方图均衡化后的图像切片2
+
+        #填充直方图均衡化后的图像切片3
+        equalized_patch_image_3 = Image.open('./tmp_for_app/real_equalized_patch_image_3.png')
+        equalized_patch_image_3 = equalized_patch_image_3.resize((75,75))
+        equalized_patch_image_3 = ImageTk.PhotoImage(equalized_patch_image_3)
+        self.equalized_patch_image_3_in_principle_window_label.configure(image=equalized_patch_image_3)
+        self.equalized_patch_image_3_in_principle_window_label.image = equalized_patch_image_3
+
+        self.equalized_patch_image_3_in_principle_window_label.place(x = 610, y = 455)    #显示原理界面直方图均衡化后的图像切片3
+
+        #填充直方图均衡化后的图像切片4
+        equalized_patch_image_4 = Image.open('./tmp_for_app/real_equalized_patch_image_4.png')
+        equalized_patch_image_4 = equalized_patch_image_4.resize((75,75))
+        equalized_patch_image_4 = ImageTk.PhotoImage(equalized_patch_image_4)
+        self.equalized_patch_image_4_in_principle_window_label.configure(image=equalized_patch_image_4)
+        self.equalized_patch_image_4_in_principle_window_label.image = equalized_patch_image_4
+
+        self.equalized_patch_image_4_in_principle_window_label.place(x = 715, y = 455)    #显示原理界面直方图均衡化后的图像切片4
+
+        #填充U-net原理图
+        Unet_image = Image.open('./U-net.png')
+        Unet_image = Unet_image.resize((240,160))
+        Unet_image = ImageTk.PhotoImage(Unet_image)
+        self.Unet_in_principle_window_label.configure(image=Unet_image)
+        self.Unet_in_principle_window_label.image = Unet_image
+        
+        self.Unet_in_principle_window_label.place(x = 870, y = 370)    #显示原理界面U-net原理图
+        self.seg_patch_in_principle_window_button.place(x = 940, y = 550)    #显示原理界面分割按钮
+
+    def seg_patch_in_principle_window(self):
+        #填充输出掩码切片1
+        patch_mask_1 = Image.open('./tmp_for_app/real_patch_mask_1.png')
+        patch_mask_1 = patch_mask_1.resize((75,75))
+        patch_mask_1 = ImageTk.PhotoImage(patch_mask_1)
+        self.patch_mask_1_in_principle_window_label.configure(image=patch_mask_1)
+        self.patch_mask_1_in_principle_window_label.image = patch_mask_1
+
+        self.patch_mask_1_in_principle_window_label.place(x = 900, y = 120)    #显示原理界面输出的掩码切片1
+
+        #填充输出掩码切片2
+        patch_mask_2 = Image.open('./tmp_for_app/real_patch_mask_2.png')
+        patch_mask_2 = patch_mask_2.resize((75,75))
+        patch_mask_2 = ImageTk.PhotoImage(patch_mask_2)
+        self.patch_mask_2_in_principle_window_label.configure(image=patch_mask_2)
+        self.patch_mask_2_in_principle_window_label.image = patch_mask_2
+
+        self.patch_mask_2_in_principle_window_label.place(x = 1005, y = 120)    #显示原理界面输出的掩码切片2
+
+        #填充输出掩码切片3
+        patch_mask_3 = Image.open('./tmp_for_app/real_patch_mask_3.png')
+        patch_mask_3 = patch_mask_3.resize((75,75))
+        patch_mask_3 = ImageTk.PhotoImage(patch_mask_3)
+        self.patch_mask_3_in_principle_window_label.configure(image=patch_mask_3)
+        self.patch_mask_3_in_principle_window_label.image = patch_mask_3
+
+        self.patch_mask_3_in_principle_window_label.place(x = 900, y = 225)    #显示原理界面输出的掩码切片3
+
+        #填充输出掩码切片4
+        patch_mask_4 = Image.open('./tmp_for_app/real_patch_mask_4.png')
+        patch_mask_4 = patch_mask_4.resize((75,75))
+        patch_mask_4 = ImageTk.PhotoImage(patch_mask_4)
+        self.patch_mask_4_in_principle_window_label.configure(image=patch_mask_4)
+        self.patch_mask_4_in_principle_window_label.image = patch_mask_4
+
+        self.patch_mask_4_in_principle_window_label.place(x = 1005, y = 225)    #显示原理界面输出的掩码切片4
+        self.concatenate_patch_in_principle_window_button.place(x = 650, y = 290)    #显示原理界面拼接按钮
+
+    def concatenate_patch_in_principle_window(self):
+        #填充拼接后的输出掩码
+        concatenated_mask = Image.open('./tmp_for_app/real_mask_without_attention.png')
+        concatenated_mask = concatenated_mask.resize((150,150))
+        concatenated_mask = ImageTk.PhotoImage(concatenated_mask)
+        self.concatenated_mask_in_principle_window_label.configure(image=concatenated_mask)
+        self.concatenated_mask_in_principle_window_label.image = concatenated_mask
+
+        self.concatenated_mask_in_principle_window_label.place(x = 625, y = 120)    #显示原理界面拼接后的输出掩码
+        self.attention_mask_in_principle_window_button.place(x = 390, y = 290)    #显示原理界面遮蔽按钮
+
+    def attention_mask_in_principle_window(self):
+        #填充遮蔽后的输出掩码
+        attention_mask = Image.open('./tmp_for_app/real_mask_with_attention.png')
+        attention_mask = attention_mask.resize((150,150))
+        attention_mask = ImageTk.PhotoImage(attention_mask)
+        self.attention_mask_in_principle_window_label.configure(image=attention_mask)
+        self.attention_mask_in_principle_window_label.image = attention_mask
+
+        self.attention_mask_in_principle_window_label.place(x = 365, y = 120)    #显示原理界面遮蔽后的输出掩码
 
     def return_main(self):
         #隐藏原理界面的所有按钮和标签
@@ -292,9 +514,25 @@ class RetinalVesselSegmentationApp:
         self.patch_image_2_in_principle_window_label.place_forget()
         self.patch_image_3_in_principle_window_label.place_forget()
         self.patch_image_4_in_principle_window_label.place_forget()
+        self.equalized_patch_image_1_in_principle_window_label.place_forget()
+        self.equalized_patch_image_2_in_principle_window_label.place_forget()
+        self.equalized_patch_image_3_in_principle_window_label.place_forget()
+        self.equalized_patch_image_4_in_principle_window_label.place_forget()
+        self.Unet_in_principle_window_label.place_forget()
+        self.patch_mask_1_in_principle_window_label.place_forget()
+        self.patch_mask_2_in_principle_window_label.place_forget()
+        self.patch_mask_3_in_principle_window_label.place_forget()
+        self.patch_mask_4_in_principle_window_label.place_forget()
+        self.concatenated_mask_in_principle_window_label.place_forget()
+        self.attention_mask_in_principle_window_label.place_forget()
+        
         self.upload_in_principle_window_button.place_forget()
         self.turn_gray_in_principle_window_button.place_forget()
         self.get_patch_in_principle_window_button.place_forget()
+        self.equalize_patch_in_principle_window_button.place_forget()
+        self.seg_patch_in_principle_window_button.place_forget()
+        self.concatenate_patch_in_principle_window_button.place_forget()
+        self.attention_mask_in_principle_window_button.place_forget()
         self.return_main_button.place_forget()
         self.quit_in_principle_window_button.place_forget()
 
