@@ -179,3 +179,5 @@ We provide links to prototypes of early system interfaces:<br>
 https://modao.cc/proto/6XGWX9WNs68d6e9PlYNRWw/sharing?view_mode=read_only<br>
 We also provide links to prototypes of optimized system interfaces:<br>
 https://modao.cc/proto/7HNGJzKTs6qg0d0DDMRYK1/sharing?view_mode=read_only<br>
+We also provide links to the latest versions of the prototypes:<br>
+https://modao.cc/proto/escyHojJs6oxenQSSRrRUY/sharing?view_mode=device&screen=skp0usdbTtC7bupkfF2YTc&canvasId=sskp0usdTtC7bvgnzWotNT<br>
