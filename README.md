@@ -181,3 +181,17 @@ We also provide links to prototypes of optimized system interfaces:<br>
 https://modao.cc/proto/7HNGJzKTs6qg0d0DDMRYK1/sharing?view_mode=read_only<br>
 We also provide links to the latest versions of the prototypes:<br>
 https://modao.cc/proto/escyHojJs6oxenQSSRrRUY/sharing?view_mode=device&screen=skp0usdbTtC7bupkfF2YTc&canvasId=sskp0usdTtC7bvgnzWotNT<br>
+
+# Run the Application
+```python  
+python window_for_app.py
+```
+You need to configure the necessary libraries in advance, such as the Tkinter Library.<br>
+
+# Test the Application
+You can test your application's front and back-end functionality in cmd.exe, such as whether the various data-handling functions are working properly, or whether the position and color of the front-end controls are correct.<br>
+```python  
+pytest test_function.py
+pytest test_position.py
+pytest test_color.py
+```
